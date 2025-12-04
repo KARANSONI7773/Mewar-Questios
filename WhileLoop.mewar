@@ -1,0 +1,9 @@
+set countdown to 3
+say "The ceremony begins in..."
+
+while countdown > 0 then
+  say countdown + "..."
+  set countdown to countdown - 1
+end
+
+say "Begin!"

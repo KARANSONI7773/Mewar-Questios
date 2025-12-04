@@ -1,0 +1,5 @@
+set i to 1
+repeat 10 then
+  say "3 * " + i + " = " + (3 * i)
+  set i to i + 1
+end

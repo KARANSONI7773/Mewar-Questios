@@ -1,0 +1,10 @@
+set i to 1
+repeat 10 then
+  say i
+  if i == 5 then
+    stop
+  end
+  set i to i + 1
+end
+
+say "Loop stopped at 5"

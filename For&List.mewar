@@ -1,0 +1,5 @@
+set generals to ["Pratap", "Shakti"]
+
+for general in generals then
+  say "Salute, " + general
+end

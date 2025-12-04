@@ -1,0 +1,10 @@
+# Do While Loop Example
+
+set i to 1
+
+do
+  say i
+  set i to i + 1
+while i <= 5
+
+say "Completed!"

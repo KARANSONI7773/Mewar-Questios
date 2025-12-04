@@ -1,0 +1,10 @@
+function check_age with age then
+  if age >= 18 then
+    return "Adult"
+  else
+    return "Minor"
+  end
+end
+
+set status to call check_age with 25
+say "Status: " + status

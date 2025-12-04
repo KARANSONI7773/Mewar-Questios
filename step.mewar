@@ -1,0 +1,7 @@
+# Step Loop Example: Odd Numbers 1–19
+
+set nums to step(1, 20, 2)
+
+for n in nums then
+  say n
+end
