@@ -1,0 +1,24 @@
+# v2 - String Functions
+
+set title to "   mewar programming language   "
+
+say upper(title)
+say lower(title)
+say trim(title)
+say upper(trim(title))
+
+# v2 - size() / length()
+
+set items to ["Sword", "Shield", "Horse"]
+
+say "Total items: " + size(items)
+say "Same result: " + length(items)
+
+# v2 - Combined Power Example
+
+set warriors to ["Veer", "Rana", "Pratap"]
+
+if contains(warriors, "Pratap") then
+  say "Hero found: " + upper(first(warriors))
+  say "Total warriors: " + size(warriors)
+end

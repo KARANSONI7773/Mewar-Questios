@@ -1,0 +1,10 @@
+enum Color then
+  RED
+  GREEN
+  BLUE
+end
+
+say Color.RED
+say Color.GREEN
+say Color.BLUE
+    

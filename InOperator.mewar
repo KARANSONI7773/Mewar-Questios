@@ -1,0 +1,56 @@
+say "===== IN / NOT IN OPERATOR TEST ====="
+newline
+
+# ---------- LIST TEST ----------
+set nums to [1,2,3,4,5,6]
+set banned to [2,4,6]
+
+say "List check:"
+for n in nums then
+  if n not in banned then
+    say n + " is allowed"
+  else
+    say n + " is blocked"
+  end
+end
+
+newline
+
+# ---------- STEP + NOT IN ----------
+say "Step loop with not in:"
+set skip to [3,7]
+
+for i in step(1,10,1) then
+  if i not in skip then
+    say i
+  end
+end
+
+newline
+
+# ---------- STRING IN / NOT IN ----------
+set name to "MewarLanguage"
+
+say "String check:"
+if "war" in name then
+  say "'war' found in name"
+end
+
+if "xyz" not in name then
+  say "'xyz' not found in name"
+end
+
+newline
+
+# ---------- DIRECT CONDITION ----------
+say "Direct condition test:"
+if 5 in nums then
+  say "5 exists in nums"
+end
+
+if 10 not in nums then
+  say "10 does not exist in nums"
+end
+
+newline
+say "===== TEST COMPLETED SUCCESSFULLY ====="

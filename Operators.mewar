@@ -1,0 +1,77 @@
+# Arithmetic Operators
+set a to 20
+set b to 10
+
+say "Addition = " + (a+b)
+say "Subtraction = " + (a-b)
+say "Multiplication = " + (a*b)
+say "Division = " + (a/b)
+say "Modulus = " + (a%b)
+
+# Comparison Operators
+set a to 20
+set b to 10
+
+say a == b
+say a != b
+say a > b
+say a < b
+say a >= b
+say a <= b
+
+# Logical Operators
+set age to 20
+set citizen to true
+
+if age >= 18 and citizen == true
+    say "Eligible"
+end
+
+if age < 18 or citizen == true
+    say "Second Condition True"
+end
+
+# Bitwise Operators
+set a to 5
+set b to 3
+
+say a & b
+say a | b
+say a ^ b
+say a << 1
+say a >> 1
+
+# Assignment Operators
+set x to 10
+
+set x to x + 5
+say x
+
+set x to x - 2
+say x
+
+set x to x * 3
+say x
+
+# Increment / Decrement
+set x to 5
+
+++x
+say x
+
+--x
+say x
+
+# String Concatenation
+set name to "Karan"
+
+say "Hello " + name
+
+# History Operator
+set score to 10
+set score to 20
+set score to 30
+
+say @score
+say @*score
+

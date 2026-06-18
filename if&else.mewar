@@ -1,7 +1,0 @@
-set temp to 25
-
-if temp > 30 then
-  say "It is a hot day."
-else
-  say "The weather is pleasant."
-end

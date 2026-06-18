@@ -1,0 +1,17 @@
+# tell 
+set nums to [10, 20, 30]
+
+say "Max of list:"
+tell max of nums
+
+say "Min of list:"
+tell min of nums
+
+say "Sum of list:"
+tell sum of nums
+
+say "Average of list:"
+tell average of nums
+
+say "Count of list:"
+tell count of nums

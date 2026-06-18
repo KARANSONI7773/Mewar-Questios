@@ -1,0 +1,13 @@
+set a to 10
+set b to "Hello"
+set nums to [1, 2, 3]
+
+show
+newline
+
+show a
+newline
+
+show b
+newline
+show nums

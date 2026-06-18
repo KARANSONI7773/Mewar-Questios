@@ -1,0 +1,63 @@
+# program 1 simple explain
+set x to 10
+set y to 20
+set sum to x + y
+
+explain sum 
+say "end program 1"
+say ""
+
+# program 2 conditional explain
+set age to 20
+set rank to "Captain"
+
+explain age > 18 and rank is "Captain" 
+say "end program 2"
+say ""
+
+# program 3 function explain
+function check_age with age then
+  if age >= 18 then
+    return "Adult"
+  else
+    return "Minor"
+  end
+end
+
+explain check_age 
+say "end program 3"
+say ""
+
+# program 4 error explain
+test
+  say abc
+fail err then
+  say "Handled error"
+end
+
+explain error 
+say "end program 4"
+say ""
+
+# program 5 loop explain
+set nums to [10, 20, 30]
+
+for n in nums then
+  explain loop
+end 
+say "end program 5"
+say ""
+
+# program 6 switch explain
+set rank to "Guard"
+
+switch rank then
+  case "King" then
+    say "Welcome"
+  case "Guard" then
+    explain switch
+  default
+    say "Unknown"
+end
+say "end program 6"
+

@@ -1,0 +1,60 @@
+say "===== MEWAR MATRIX TEST ====="
+newline
+
+# ----- CREATE MATRICES -----
+matrix A = [[1,2],[3,4]]
+matrix B = [[5,6],[7,8]]
+
+say "Matrix A:"
+show A
+newline
+
+say "Matrix B:"
+show B
+newline
+
+
+# ----- ADDITION -----
+say "A + B:"
+set Add to A + B
+show Add
+newline
+
+
+# ----- SUBTRACTION -----
+say "B - A:"
+set Sub to B - A
+show Sub
+newline
+
+
+# ----- MULTIPLICATION -----
+say "A * B:"
+set Mul to A * B
+show Mul
+newline
+
+
+# ----- MATRIX FUNCTIONS -----
+say "Rows of A = " + rows(A)
+say "Columns of A = " + cols(A)
+newline
+
+
+# ----- AUTO DETECTION TEST -----
+say "Auto detection matrix:"
+set C to A + B
+show C
+newline
+
+
+# ----- ERROR TEST -----
+test
+  matrix Wrong = [[1,2,3],[4,5,6]]
+  set Bad to A + Wrong
+fail err then
+  say "Matrix error handled: " + err
+end
+
+newline
+say "===== MATRIX TEST COMPLETE ====="

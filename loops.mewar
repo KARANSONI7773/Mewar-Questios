@@ -1,0 +1,88 @@
+say "================================="
+say "ROYAL 5 LOOP TEST"
+say "================================="
+
+# PROGRAM 1 : WHILE LOOP
+
+say "PROGRAM 1"
+
+set i to 1
+
+while i <= 5 then
+
+    say i
+
+    set i to i + 1
+
+end
+
+
+# PROGRAM 2 : FOR LOOP
+
+say "PROGRAM 2"
+
+for i in step(1,5,1) then
+
+    say i
+
+end
+
+
+# PROGRAM 3 : REPEAT LOOP
+
+say "PROGRAM 3"
+
+repeat 5 then
+
+    say "Hello"
+
+end
+
+
+# PROGRAM 4 : STEP LOOP
+
+say "PROGRAM 4"
+
+for n in step(1,15,2) then
+
+    say n
+
+end
+
+
+# PROGRAM 5 : DO WHILE LOOP
+
+say "PROGRAM 5"
+
+set x to 1
+
+do
+
+    say x
+
+    set x to x + 1
+
+while x <= 5
+end
+
+say "================================="
+say "ROYAL 5 LOOP TEST COMPLETE"
+say "================================="
+
+say "================================="
+say "FOR LOOP PATTERN TEST"
+say "================================="
+
+set stars to ""
+
+for i in step(1,5,1) then
+
+    set stars to stars + "*"
+
+    say stars
+
+end
+
+say "================================="
+say "PATTERN COMPLETE"
+say "================================="

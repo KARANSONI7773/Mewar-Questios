@@ -1,0 +1,5 @@
+const pi to 3.14
+say pi
+
+# ❌ This will throw error
+set pi to 10

@@ -1,0 +1,86 @@
+say "===== MEWAR v4 POINTER MASTER PROGRAM ====="
+newline
+
+# 1️⃣ BASIC VARIABLE
+set x to 10
+say "Initial x = " + x
+
+# 2️⃣ CREATE POINTER
+set p to address x
+say "Pointer p created to x"
+
+# 3️⃣ READ THROUGH POINTER
+say "Value via pointer p = " + value p
+
+newline
+
+# 4️⃣ MODIFY VIA POINTER
+set value p to 50
+say "After pointer write, x = " + x
+
+newline
+
+# 5️⃣ SECOND VARIABLE
+set y to 100
+say "Initial y = " + y
+
+# 6️⃣ POINT POINTER TO ANOTHER VARIABLE
+set p2 to address y
+say "Pointer p2 created to y"
+
+say "Value via pointer p2 = " + value p2
+
+newline
+
+# 7️⃣ POINTER WRITE WITH VARIABLE
+set value p2 to x
+say "After p2 write, y = " + y
+
+newline
+
+# 8️⃣ POINTER CHAIN (POINTER TO POINTER VALUE)
+set z to 999
+set p3 to address z
+
+say "z = " + z
+say "value p3 = " + value p3
+
+set value p3 to value p
+say "After chaining, z = " + z
+
+newline
+
+# 9️⃣ SHOW POINTER DETAILS
+say "----- SHOW POINTER STATES -----"
+show x
+show y
+show z
+show p
+show p2
+show p3
+
+newline
+
+# 🔟 POINTER SAFETY TEST
+say "----- INVALID POINTER TEST -----"
+set fake to 5
+
+test
+  set value fake to 100
+fail err then
+  say "Pointer error handled: " + err
+end
+
+newline
+
+# 1️⃣1️⃣ POINTER + FUNCTION
+function set_to_200 with ptr then
+  set value ptr to 200
+end
+
+call set_to_200 with p
+say "After function pointer write, x = " + x
+
+newline
+
+say "===== POINTER PROGRAM END ====="

@@ -1,0 +1,38 @@
+say "===== ASCII & CHAR TEST PROGRAM ====="
+newline
+
+# --- ASCII TEST ---
+say "ASCII Values:"
+say "A = " + ascii("A")
+say "Z = " + ascii("Z")
+say "a = " + ascii("a")
+say "0 = " + ascii("0")
+
+newline
+
+# --- CHAR TEST ---
+say "CHAR Conversion:"
+say "65 = " + char(65)
+say "66 = " + char(66)
+say "67 = " + char(67)
+say "97 = " + char(97)
+
+newline
+
+# --- VARIABLE TEST ---
+set letter to "M"
+set code to ascii(letter)
+
+say "Letter = " + letter
+say "ASCII Code = " + code
+
+newline
+
+# --- REVERSE TEST ---
+set newLetter to char(code)
+
+say "Convert Back:"
+say "Character = " + newLetter
+
+newline
+say "===== TEST COMPLETE ====="

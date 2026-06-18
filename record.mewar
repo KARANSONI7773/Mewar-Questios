@@ -1,0 +1,13 @@
+record Warrior then
+  name
+  power
+  alive
+end
+
+set w to Warrior
+set w.name to "Pratap"
+set w.power to 100
+set w.alive to true
+
+say w.name
+say w.power

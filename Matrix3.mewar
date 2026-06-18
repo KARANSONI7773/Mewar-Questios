@@ -1,0 +1,39 @@
+say "===== SAFE MATRIX INPUT TEST ====="
+newline
+
+# ⭐ User enters matrix A
+say "Create Matrix A"
+matrix A to ask
+
+newline
+say "Matrix A:"
+show A
+
+say "Rows = " + rows(A)
+say "Columns = " + cols(A)
+
+newline
+say "Access test:"
+say "First element = " + A[1][1]
+
+newline
+
+# ⭐ User enters matrix B
+say "Create Matrix B"
+matrix B to ask
+
+newline
+say "Matrix B:"
+show B
+
+newline
+say "Addition Test:"
+test
+  set C to A + B
+  show C
+fail err then
+  say "Addition error handled: " + err
+end
+
+newline
+say "===== TEST COMPLETE ====="

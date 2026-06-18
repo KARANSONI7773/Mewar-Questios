@@ -1,0 +1,76 @@
+say "===== EXPLICIT CASTING TEST START ====="
+newline
+
+# ---------- NUMBER CAST ----------
+set num1 to number("123")
+say "number("123") = " + num1
+
+say "num1 + 10 = "
+say num1 + 10
+newline
+
+
+# ---------- STRING CAST ----------
+set text1 to string(100)
+say "string(100) = " + text1
+
+say "Concatenation test:"
+say text1 + " King"
+newline
+
+
+# ---------- PURE MATH ----------
+say "Pure math test:"
+say 20 + 30
+say 50 - 10
+say 6 * 5
+newline
+
+
+# ---------- MIXED EXPRESSION ----------
+set x to number("50")
+set y to 25
+
+say "Mixed math:"
+say x + y
+newline
+
+
+# ---------- LIST TEST ----------
+set nums to [1,2,3]
+say "List test:"
+say nums
+newline
+
+
+# ---------- STEP + CAST ----------
+say "Step test:"
+for i in step(1,5,1) then
+  say i + 1
+end
+newline
+
+
+# ---------- INVALID CAST TEST ----------
+say "Invalid cast test:"
+test
+  set bad to number("abc")
+fail err then
+  say "Error handled: " + err
+end
+newline
+say "=== BOOLEAN TEST ==="
+
+set a to boolean(1)
+set b to boolean(0)
+set c to boolean("true")
+set d to boolean("false")
+set e to boolean("hello")
+
+say a
+say b
+say c
+say d
+say e
+newline
+say "===== TEST COMPLETE ====="

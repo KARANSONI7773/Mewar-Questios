@@ -1,0 +1,22 @@
+say "===== DETERMINANT TEST ====="
+
+matrix A = [[1,2],[3,4]]
+
+say "Matrix A:"
+show A
+
+newline
+say "det(A) = " + det(A)
+
+say "===== TEST COMPLETE ====="
+
+say "===== INVERSE TEST ====="
+
+matrix A = [[4,7],[2,6]]
+
+show A
+newline
+
+set Inv to inverse(A)
+
+show Inv

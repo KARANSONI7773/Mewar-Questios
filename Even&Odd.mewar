@@ -1,7 +1,0 @@
-set num to ask "Enter a number to check:"
-
-if num % 2 == 0 then
-  say num + " is an even number."
-else
-  say num + " is an odd number."
-end

@@ -1,0 +1,32 @@
+say "===== MATRIX EDIT TEST ====="
+
+matrix A = [[1,2,3],[4,5,6],[7,8,9]]
+
+show A
+newline
+
+say "Editing A[3][1]"
+set A[3][1] to 999
+
+show A
+newline
+
+say "Value check:"
+say A[3][1]
+
+say "===== TEST COMPLETE ====="
+
+say "===== TRANSPOSE TEST ====="
+
+matrix A = [[1,2,3],[4,5,6]]
+
+say "Original Matrix:"
+show A
+newline
+
+set T to transpose(A)
+
+say "Transpose Matrix:"
+show T
+
+say "===== TEST COMPLETE ====="

@@ -1,0 +1,80 @@
+say "=== ROYAL ERROR SHIELD TEST ==="
+
+# =====================================
+# PROGRAM 1 : LIST INDEX ERROR
+# =====================================
+
+test
+
+    set nums to [10,20,30]
+
+    say nums[10]
+
+fail err then
+
+    say "Program 1 Failed"
+    say err
+
+else
+
+    say "Program 1 Passed"
+
+close
+
+    say "Program 1 Closed"
+
+end
+
+# =====================================
+# PROGRAM 2 : MATRIX INDEX ERROR
+# =====================================
+
+test
+
+    set A to [[1,2],[3,4]]
+
+    say A[5][5]
+
+fail err then
+
+    say "Program 3 Failed"
+    say err
+
+else
+
+    say "Program 3 Passed"
+
+close
+
+    say "Program 3 Closed"
+
+end
+
+
+# =====================================
+# PROGRAM 3 : SUCCESS TEST
+# =====================================
+
+test
+
+    set x to 10
+    set y to 2
+
+    say x / y
+
+fail err then
+
+    say "Program 4 Failed"
+    say err
+
+else
+
+    say "Program 4 Passed"
+
+close
+
+    say "Program 4 Closed"
+
+end
+
+say "=== ALL TESTS FINISHED ==="

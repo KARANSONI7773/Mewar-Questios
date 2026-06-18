@@ -1,0 +1,70 @@
+# List Operations - append, remove, sort, reverse, pop, slice, clear
+
+set nums to [5, 1, 4, 2]
+
+say "Original list:"
+say nums
+
+sort nums
+say "After sort:"
+say nums
+
+reverse nums
+say "After reverse:"
+say nums
+
+pop from nums
+say "After pop (last element removed):"
+say nums
+
+slice nums from 1 to 2
+say "After slice (1 to 2):"
+say nums
+
+clear nums
+say "After clear:"
+say nums
+say "Nested Lists"
+set x to [[10,20],[30,40]]
+
+say x[1][2]    # 20
+say x[2][1]    # 30
+
+set x[1][2] to 999
+
+say x[1][2]    # 999
+
+set warriors to ["Veer", "Pratap"]
+
+insert "Rana" at 2 in warriors
+say warriors
+
+insert "King" at 1 in warriors
+say warriors
+
+append "Soldier" to warriors
+say warriors
+
+# v2 - size() / length()
+
+set items to ["Sword", "Shield", "Horse"]
+
+say "Total items: " + size(items)
+say "Same result: " + length(items)
+
+# v2 - first() & last()
+
+set numbers to [10, 20, 30, 40]
+
+say "First: " + first(numbers)
+say "Last: " + last(numbers)
+
+# v2 – contains(list, value)
+
+set names to ["Veer", "Rana", "Mewar"]
+
+if contains(names, "Mewar") then
+  say "Royal name found"
+else
+  say "Name not found"
+end

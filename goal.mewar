@@ -1,0 +1,21 @@
+#1 profram
+goal sum == 10
+goal "Sum must be correct"
+
+set a to 3
+set b to 4
+set sum to a + b
+
+explain program
+newline
+
+#2 program
+say "second program"
+goal sum == 10
+goal "Sum must be correct"
+
+set a to 6
+set b to 4
+set sum to a + b
+
+explain program

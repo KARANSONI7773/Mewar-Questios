@@ -1,0 +1,70 @@
+say "===== MATRIX INDEXING TEST ====="
+newline
+
+# ----- Create Matrix -----
+matrix A = [[10,20,30],[40,50,60],[70,80,90]]
+
+say "Matrix A:"
+show A
+newline
+
+
+# ----- Basic Index Test -----
+say "A[1][1] = " + A[1][1]
+say "A[2][3] = " + A[2][3]
+say "A[3][2] = " + A[3][2]
+newline
+
+
+# ----- Variable Index Test -----
+set r to 2
+set c to 1
+
+say "Using variables:"
+say "A[r][c] = " + A[r][c]
+newline
+
+
+# ----- Math Index Test -----
+say "Using math expressions:"
+say "A[1+1][2+1] = " + A[1+1][2+1]
+newline
+
+
+# ----- Loop Index Test -----
+say "Reading full matrix using loop:"
+
+set i to 1
+repeat rows(A) then
+    set j to 1
+
+    repeat cols(A) then
+        print A[i][j] + " "
+        set j to j + 1
+    end
+
+    newline
+    set i to i + 1
+end
+newline
+
+
+# ----- Out of Range Error Test -----
+say "Testing invalid index..."
+
+test
+    say A[5][1]
+fail err then
+    say "Index error handled: " + err
+end
+
+newline
+
+
+# ----- Matrix Detection After Calculation -----
+set B to A + A
+say "Matrix B = A + A"
+show B
+
+newline
+say "===== MATRIX INDEX TEST COMPLETE ====="
