@@ -1,0 +1,16 @@
+say "===== HISTORY OPERATOR TEST ====="
+
+set x to 1
+set x to 2
+set x to 3
+
+say "Current value:"
+say x
+
+say "Previous value (@x):"
+say @x
+
+say "All history (@*x):"
+say @* x
+
+say "===== TEST COMPLETE ====="
