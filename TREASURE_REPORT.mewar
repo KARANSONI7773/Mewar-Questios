@@ -1,0 +1,20 @@
+set goldCoins to [120, 450, 300, 800]
+
+say "===== ROYAL TREASURE REPORT ====="
+
+say "Chest 1:"
+say goldCoins[1]
+
+say "Chest 2:"
+say goldCoins[2]
+
+say "Chest 3:"
+say goldCoins[3]
+
+say "Chest 4:"
+say goldCoins[4]
+
+set totalTreasure to goldCoins[1] + goldCoins[2] + goldCoins[3] + goldCoins[4]
+
+say "Total Royal Treasure:"
+say totalTreasure
