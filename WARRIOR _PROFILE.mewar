@@ -1,0 +1,16 @@
+record Warrior then
+    name
+    power
+    rank
+end
+
+set hero to Warrior
+
+set hero.name to "Pratap"
+set hero.power to 95
+set hero.rank to "Commander"
+
+say "===== WARRIOR PROFILE ====="
+say hero.name
+say hero.power
+say hero.rank
