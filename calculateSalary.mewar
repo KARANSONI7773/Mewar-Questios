@@ -1,0 +1,30 @@
+function calculateSalary with hoursWorked, ratePerHour then
+
+    set totalPay to hoursWorked * ratePerHour
+
+    if totalPay >= 50000 then
+        return "High Income"
+    elif totalPay >= 25000 then
+        return "Medium Income"
+    else
+        return "Starter Income"
+    end
+
+end
+
+set employeeName to "Karan"
+set workHours to 220
+set hourlyRate to 250
+
+set monthlySalary to workHours * hourlyRate
+
+set category to call calculateSalary with workHours, hourlyRate
+
+say "===== EMPLOYEE REPORT ====="
+say "Name: " + employeeName
+
+say "Monthly Salary:"
+say monthlySalary
+
+say "Income Category:"
+say category
