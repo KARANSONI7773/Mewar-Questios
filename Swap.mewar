@@ -1,0 +1,25 @@
+# ============================================
+# Program: Swap Two Variables
+# Feature: Variable Assignment
+# ============================================
+
+# Step 1: Create two variables
+set first to 10
+set second to 20
+
+# Step 2: Show original values
+say "Before Swapping"
+say "First: " + first
+say "Second: " + second
+
+newline
+
+# Step 3: Swap using a temporary variable
+set temp to first
+set first to second
+set second to temp
+
+# Step 4: Show swapped values
+say "After Swapping"
+say "First: " + first
+say "Second: " + second
