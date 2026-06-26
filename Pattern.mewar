@@ -1,0 +1,65 @@
+say "==========================================="
+say "     MEWAR PATTERN PRINTING PROGRAM"
+say "==========================================="
+
+# -------------------------------------------
+# Pattern 1 : Right Triangle
+# -------------------------------------------
+
+say ""
+say "Pattern 1 : Right Triangle"
+
+set stars to ""
+
+for i in step(1,5,1) then
+
+    set stars to stars + "*"
+
+    say stars
+
+end
+
+
+# -------------------------------------------
+# Pattern 2 : Reverse Triangle
+# -------------------------------------------
+
+say ""
+say "Pattern 2 : Reverse Triangle"
+
+for i in step(5,1,-1) then
+
+    set stars to ""
+
+    for j in step(1,i,1) then
+        set stars to stars + "*"
+    end
+
+    say stars
+
+end
+
+
+# -------------------------------------------
+# Pattern 3 : Square
+# -------------------------------------------
+
+say ""
+say "Pattern 3 : Square"
+
+for i in step(1,5,1) then
+
+    set stars to ""
+
+    for j in step(1,5,1) then
+        set stars to stars + "* "
+    end
+
+    say stars
+
+end
+
+say ""
+say "==========================================="
+say "      ALL PATTERNS COMPLETED"
+say "==========================================="
