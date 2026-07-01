@@ -1,0 +1,53 @@
+say "===== MEWAR V6 FILE SYSTEM TEST ====="
+
+create folder "data"
+
+create file "data/notes.txt"
+
+write "Hello Mewar V6" to "data/notes.txt"
+
+append " - File System Working" to "data/notes.txt"
+
+read "data/notes.txt" into content
+
+say "File Content:"
+say content
+
+copy file "data/notes.txt" to "data/backup.txt"
+
+read "data/backup.txt" into backupContent
+
+say "Backup Content:"
+say backupContent
+
+move file "data/backup.txt" to "data/archive.txt"
+
+rename file "data/archive.txt" to "data/final.txt"
+
+if exists("data/final.txt") then
+    say "Final File Found"
+else
+    say "Final File Missing"
+end
+
+set files to list files "data"
+
+say "Files In Data Folder:"
+say files
+
+set folders to list folders "."
+
+say "Folders In Workspace:"
+say folders
+
+delete file "data/final.txt"
+
+if exists("data/final.txt") then
+    say "Delete Failed"
+else
+    say "File Deleted Successfully"
+end
+
+delete folder "data"
+
+say "===== TEST COMPLETE ====="
