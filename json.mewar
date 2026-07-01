@@ -1,0 +1,21 @@
+set user to json("{\"name\":\"Karan\",\"age\":21}")
+
+say user.name
+say user.age
+
+set text to tojson(user)
+
+say text
+
+# this secound example
+set nums to json("[10,20,30]")
+
+say nums[1]
+say nums[2]
+say nums[3]
+
+# this third example
+set users to json("[{\"name\":\"Karan\"},{\"name\":\"Raj\"}]")
+
+say users[1].name
+say users[2].name
