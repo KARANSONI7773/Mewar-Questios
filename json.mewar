@@ -1,3 +1,5 @@
+say "===== MEWAR V6 JSON SYSTEM ====="
+
 set user to json("{\"name\":\"Karan\",\"age\":21}")
 
 say user.name
