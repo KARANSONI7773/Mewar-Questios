@@ -1,0 +1,11 @@
+set body to json("{\"name\":\"Karan\",\"age\":21}")
+
+post "https://httpbin.org/post" with body into result
+
+say result.status
+say result.ok
+
+if result.ok == true then
+    say result.data.json.name
+    say result.data.json.age
+end

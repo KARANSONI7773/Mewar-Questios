@@ -1,0 +1,10 @@
+say "===== GET TEST ====="
+
+set headers to json("{\"User-Agent\":\"Mewar-V6\"}")
+
+get "https://api.github.com/users/KARANSONI7773" with headers headers into user
+
+say user.status
+say user.ok
+say user.data.login
+say user.data.id
