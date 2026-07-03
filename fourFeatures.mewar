@@ -1,0 +1,41 @@
+say "===== TYPE TEST ====="
+
+say type(100)
+say type("Mewar")
+say type(true)
+
+set user to json("{\"name\":\"Karan\",\"age\":21}")
+
+say type(user)
+
+say ""
+say "===== HAS TEST ====="
+
+say has(user, "name")
+say has(user, "age")
+say has(user, "city")
+
+say ""
+say "===== PRETTY TEST ====="
+
+say pretty(user)
+
+say ""
+say "===== MERGE TEST ====="
+
+set user1 to json("{\"name\":\"Karan\"}")
+
+set user2 to json("{\"city\":\"Udaipur\"}")
+
+set merged to merge(user1, user2)
+
+say merged.name
+say merged.city
+
+say ""
+say "===== PRETTY MERGED ====="
+
+say pretty(merged)
+
+say ""
+say "===== ALL TESTS PASSED ====="
