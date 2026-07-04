@@ -1,0 +1,14 @@
+say "===== PUT TEST ====="
+
+set body to json("{\"name\":\"Karan Updated\",\"age\":22}")
+
+put "https://httpbin.org/put" with body into result
+
+say "Status:"
+say result.status
+
+say "OK:"
+say result.ok
+
+say "Response:"
+say pretty(result.data)
