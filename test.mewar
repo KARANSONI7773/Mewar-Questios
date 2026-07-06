@@ -1,0 +1,83 @@
+say "===== JSON TEST ====="
+
+set user to json("{\"name\":\"Karan\",\"age\":21,\"city\":\"Udaipur\"}")
+
+say type(user)
+say has(user, "name")
+say user.name
+say pretty(user)
+
+say ""
+say "===== KEYS TEST ====="
+
+set k to keys(user)
+say k
+
+say ""
+say "===== VALUES TEST ====="
+
+set v to values(user)
+say v
+
+say ""
+say "===== MERGE TEST ====="
+
+set extra to json("{\"country\":\"India\"}")
+
+set merged to merge(user, extra)
+
+say merged.country
+
+say ""
+say "===== GET TEST ====="
+
+get "https://api.github.com/users/KARANSONI7773" into github
+
+say github.status
+say github.ok
+
+if github.ok == true then
+    say github.data.login
+end
+
+say ""
+say "===== POST TEST ====="
+
+set body to json("{\"name\":\"Karan\"}")
+
+post "https://httpbin.org/post" with body into postResult
+
+say postResult.status
+say postResult.ok
+
+say ""
+say "===== PUT TEST ====="
+
+put "https://httpbin.org/put" with body into putResult
+
+say putResult.status
+say putResult.ok
+
+say ""
+say "===== PATCH TEST ====="
+
+patch "https://httpbin.org/patch" with body into patchResult
+
+say patchResult.status
+say patchResult.ok
+
+say ""
+say "===== DELETE TEST ====="
+
+deletehttp "https://httpbin.org/delete" into deleteResult
+
+say deleteResult.status
+say deleteResult.ok
+
+say ""
+say "===== OBJECT ACCESS TEST ====="
+
+set person to json("{\"name\":\"Karan\",\"address\":{\"city\":\"Udaipur\"}}")
+
+say person.name
+say person.address.city
