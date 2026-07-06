@@ -1,4 +1,4 @@
-say "===== MEWAR V6 FILE SYSTEM ====="
+say "===== MEWAR V6 FILE SYSTEM TEST ====="
 
 create folder "data"
 
