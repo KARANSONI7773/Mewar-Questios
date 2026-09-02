@@ -12,7 +12,7 @@ newline
 
 # --- CHAR TEST ---
 say "CHAR Conversion:"
-say "65 = " + char(65)
+say "65 = " + char(69)
 say "66 = " + char(66)
 say "67 = " + char(67)
 say "97 = " + char(97)
